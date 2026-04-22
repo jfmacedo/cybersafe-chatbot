@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberSafe Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <header class="main-header">
+      <h1>CyberSafe Chatbot</h1>
+      <p>Educational cybersecurity assistant for beginners</p>
+    </header>
+
+    <main class="dashboard">
+      <!-- Chatbot Section -->
+      <section class="panel chatbot-panel">
+        <div class="panel-header">
+          <h2>Cybersecurity Assistant</h2>
+          <button id="clear-chat-btn" class="secondary-btn">Clear Chat</button>
+        </div>
+
+        <div id="chat-box" class="chat-box">
+          <div class="message bot">
+            Hello! I can help you understand phishing, malware, 2FA, strong passwords, and suspicious messages.
+          </div>
+        </div>
+
+        <div class="quick-buttons">
+          <button type="button">What is phishing?</button>
+          <button type="button">Strong password</button>
+          <button type="button">What is 2FA?</button>
+          <button type="button">Scam email</button>
+        </div>
+
+        <div class="input-area">
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Ask a cybersecurity question..."
+          />
+          <button id="send-btn" type="button">Send</button>
+        </div>
+      </section>
+
+      <!-- Analyzer Section -->
+      <section class="panel analyzer-panel">
+        <div class="panel-header">
+          <h2>Phishing Message Analyzer</h2>
+        </div>
+
+        <label for="phishing-input" class="input-label">
+          Paste a suspicious email or message:
+        </label>
+
+        <textarea
+          id="phishing-input"
+          placeholder="Example: Urgent! Your account has been suspended. Click here to verify your password now..."
+        ></textarea>
+
+        <button id="analyze-btn" class="analyze-btn" type="button">
+          Analyze Message
+        </button>
+
+        <div id="result-card" class="result-card">
+          <h3>Analysis Result</h3>
+
+          <div class="result-row">
+            <span>Risk Score:</span>
+            <strong id="risk-score">0%</strong>
+          </div>
+
+          <div class="result-row">
+            <span>Risk Level:</span>
+            <strong id="risk-level">Low</strong>
+          </div>
+
+          <div class="result-section">
+            <h4>Red Flags Found</h4>
+            <ul id="red-flags-list">
+              <li>No suspicious indicators yet.</li>
+            </ul>
+          </div>
+
+          <div class="result-section">
+            <h4>Recommendation</h4>
+            <p id="recommendation-text">
+              Paste a message above and click "Analyze Message" to see the result.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
