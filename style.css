@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #0b1120, #111827);
+    color: #f8fafc;
+    min-height: 100vh;
+    padding: 30px 20px;
+  }
+  
+  .app-container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  .main-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .main-header h1 {
+    font-size: 42px;
+    margin-bottom: 8px;
+    color: #38bdf8;
+  }
+  
+  .main-header p {
+    color: #cbd5e1;
+    font-size: 16px;
+  }
+  
+  .dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+  }
+  
+  .panel {
+    background: #111827;
+    border: 1px solid #1f2937;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  
+  .panel-header h2 {
+    font-size: 24px;
+    color: #e2e8f0;
+  }
+  
+  .secondary-btn {
+    background: transparent;
+    color: #cbd5e1;
+    border: 1px solid #334155;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .secondary-btn:hover {
+    background: #1e293b;
+  }
+  
+  .chat-box {
+    background: #0f172a;
+    border: 1px solid #1e293b;
+    border-radius: 14px;
+    min-height: 380px;
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .quick-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .quick-buttons button {
+    background: #1e293b;
+    color: #e2e8f0;
+    border: 1px solid #334155;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .quick-buttons button:hover {
+    background: #334155;
+  }
+  
+  .input-area {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    background: #0f172a;
+    color: white;
+    outline: none;
+  }
+  
+  .input-area button,
+  .analyze-btn {
+    background: #06b6d4;
+    color: white;
+    border: none;
+    padding: 13px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .input-area button:hover,
+  .analyze-btn:hover {
+    background: #0891b2;
+  }
+  
+  .input-label {
+    display: block;
+    margin-bottom: 10px;
+    color: #cbd5e1;
+  }
+  
+  textarea {
+    width: 100%;
+    min-height: 180px;
+    resize: vertical;
+    background: #0f172a;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .result-card {
+    margin-top: 20px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 18px;
+  }
