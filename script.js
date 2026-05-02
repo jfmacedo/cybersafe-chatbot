@@ -9,7 +9,12 @@ function addMessage(text, sender) {
   messageDiv.textContent = text;
 
   chatBox.appendChild(messageDiv);
-  chatBox.scrollTop = chatBox.scrollHeight;
+
+  // scroll suave
+  chatBox.scrollTo({
+    top: chatBox.scrollHeight,
+    behavior: "smooth"
+  });
 }
 
 function getBotResponse(userMessage) {
@@ -185,3 +190,13 @@ function analyzeMessage() {
 }
 
 analyzeBtn.addEventListener("click", analyzeMessage);
+
+const clearChatBtn = document.getElementById("clear-chat-btn");
+
+clearChatBtn.addEventListener("click", function () {
+  chatBox.innerHTML = `
+    <div class="message bot">
+      Hello! I can help you understand phishing, malware, 2FA, strong passwords, and suspicious messages.
+    </div>
+  `;
+});

@@ -243,3 +243,16 @@
       flex-direction: column;
     }
   }
+
+  .result-card {
+    transition: all 0.3s ease;
+  }
+  
+  .result-card:hover {
+    transform: scale(1.01);
+  }
+  
+  .result-section p {
+    color: #cbd5e1;
+    line-height: 1.6;
+  }
